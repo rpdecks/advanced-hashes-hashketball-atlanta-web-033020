@@ -217,7 +217,15 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  
+  biggest_shoe = nil
+  game_hash.each do |place, team|
+    team.each do |key, data|
+      if key == :players
+        data.each do |player|
+          shoe_size(player[:player_name]).max
+        end
+      end
+  end
 end
 
 
