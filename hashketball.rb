@@ -217,7 +217,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  biggest_shoe = nil
+  biggest_shoe = 0
   game_hash.each do |place, team|
     team.each do |key, data|
       if key == :players
