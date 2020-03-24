@@ -171,6 +171,7 @@ end
 def team_names
   teams_playing = []
   game_hash.each do |place, team|
+    binding.pry
     teams_playing.push(team[:team_name])
   end
 end
