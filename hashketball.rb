@@ -149,14 +149,13 @@ def shoe_size(name)
       if key == :players
         data.each do |player|
           if player[:player_name] == name
-          size = player[:points]
+          size = player[:shoe]
           end
         end
       end
     end
   end
-  return total_scored
-  game.hash.each do 
+  return size
 end
 
 
