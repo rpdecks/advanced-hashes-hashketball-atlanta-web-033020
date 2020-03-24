@@ -169,4 +169,6 @@ def team_colors(data)
   return team_colors
 end
 
-
+def team_names(data)
+  
+end
