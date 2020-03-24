@@ -142,7 +142,9 @@ def num_points_scored(name)
   return total_scored
 end
 
-
+def shoe_size
+  
+end
 
 
 
