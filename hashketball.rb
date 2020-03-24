@@ -201,6 +201,7 @@ def player_stats(name)
         data.each do |player|
           if player[:player_name] == name
           stats << player[:number]
+          stats << player[:shoe]
           stats << player[:number]
           end
         end
