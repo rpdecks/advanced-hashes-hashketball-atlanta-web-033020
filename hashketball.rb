@@ -204,6 +204,7 @@ def player_stats(name)
           stats << player[:shoe]
           stats << player[:rebounds]
           stats << player[:assists]
+          stats << player[:steals]
           stats << player[:]
           end
         end
