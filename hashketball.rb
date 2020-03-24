@@ -129,7 +129,7 @@ end
 def num_points_scored(name)
   total_scored = nil
   game_hash.each do |place, team|
-    team.each do |players, |
+    team.each do |key, data|
       if players[:player_name] = name
       total_scored = player_hash[:points]
       binding.pry
