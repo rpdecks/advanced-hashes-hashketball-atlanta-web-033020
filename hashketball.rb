@@ -200,8 +200,8 @@ def player_stats(name)
       if key == :players
         data.each do |player|
           if player[:player_name] == name
-          stats << player[:points]
-          
+          stats << player
+          return player[]
           end
         end
       end
