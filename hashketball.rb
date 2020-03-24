@@ -174,6 +174,7 @@ def team_names
     teams_playing.push(team[:team_name])
    #binding.pry
   end
+  teams_playing
 end
 
 
