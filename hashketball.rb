@@ -133,7 +133,7 @@ def num_points_scored(name)
       #binding.pry
       if player_hash[:player_name] = name
       total_scored = player_hash[:points]
-      binding.pry
+      #binding.pry
       end
     end
   end
