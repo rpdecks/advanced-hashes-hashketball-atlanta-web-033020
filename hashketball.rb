@@ -171,5 +171,12 @@ end
 
 def team_names(data)
   teams_playing = []
-  
-end
+  game_hash.each do |place, team|
+    
+  end
+
+
+
+
+
+
