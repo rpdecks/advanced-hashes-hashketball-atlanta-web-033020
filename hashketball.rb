@@ -132,7 +132,7 @@ def num_points_scored(name)
     home_away[1][:players].each do |player_hash, index|
       #binding.pry
       if player_hash[index] = name
-      total_scored = scorer[:points]
+      total_scored = player_hash[index][:points]
       end
     end
   end
