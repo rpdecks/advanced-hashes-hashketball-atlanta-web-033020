@@ -217,8 +217,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  shoe_rebounds = [{}]
-  game_hash[:away][:players][]
+  
 end
 
 
