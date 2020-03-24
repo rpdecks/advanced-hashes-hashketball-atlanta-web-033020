@@ -168,7 +168,7 @@ def team_colors(data)
   return team_colors
 end
 
-def team_names(data)
+def team_names
   teams_playing = []
   game_hash.each do |place, team|
     teams_playing << team[:team_name]
