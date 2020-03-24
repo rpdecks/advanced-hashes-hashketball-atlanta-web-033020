@@ -144,7 +144,19 @@ end
 
 def shoe_size(name)
   size = nil
-  
+  game_hash.each do |place, team|
+    team.each do |key, data|
+      if key == :players
+        data.each do |player|
+          if player[:player_name] == name
+          size = player[:points]
+          end
+        end
+      end
+    end
+  end
+  return total_scored
+  game.hash.each do 
 end
 
 
