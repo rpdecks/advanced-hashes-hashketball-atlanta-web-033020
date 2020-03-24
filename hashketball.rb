@@ -143,7 +143,19 @@ def num_points_scored(name)
 end
 
 def shoe_size(name)
-  game_hash[home]
+  size = nil
+  game_hash.each do |place, team|
+    team.each do |key, data|
+      if key == :players
+        data.each do |player|
+          if player[:player_name] == name
+          size = player[:shoe]
+          end
+        end
+      end
+    end
+  end
+  return size
 end
 
 def team_colors(data)
@@ -206,10 +218,7 @@ end
 
 def big_shoe_rebounds
   shoe_rebounds = [{}]
-  game_hash.each do |place, team|
-    team.each do |key, data|
-      if key == :players
-        shoe_rebounds.push[:size] = data[:shoe]
+  game_hash[:away][:players]
 end
 
 
