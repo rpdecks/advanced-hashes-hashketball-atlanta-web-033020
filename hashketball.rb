@@ -170,5 +170,6 @@ def team_colors(data)
 end
 
 def team_names(data)
+  teams_playing = []
   
 end
