@@ -180,6 +180,7 @@ end
 def player_numbers(team)
   numbers = []
   game_hash.each do [place, team]
+    if 
     team.each do [key, data]
       if key == :players
         data.each do |player|
