@@ -202,7 +202,8 @@ def player_stats(name)
           if player[:player_name] == name
           stats << player[:number]
           stats << player[:shoe]
-          stats << player[:number]
+          stats << player[:rebounds]
+          stats << player[:]
           end
         end
       end
