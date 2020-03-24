@@ -217,13 +217,11 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  shoe_rebounds = {
-    :size
-  }
+  shoe_rebounds = [{}]
   game_hash.each do |place, team|
     team.each do |key, data|
       if key == :players
-        data.reduce do |player|
+        shoe_rebounds.push[:size] = data[:shoe]
 end
 
 
