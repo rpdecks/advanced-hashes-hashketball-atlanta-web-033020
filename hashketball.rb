@@ -222,7 +222,7 @@ def big_shoe_rebounds
     team.each do |key, data|
       if key == :players
         data.each do |player|
-          shoe_size(player[:player_name]).max
+          shoe_size(player[:player_name])
           binding.pry
         end
       end
