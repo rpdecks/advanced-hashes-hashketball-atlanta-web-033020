@@ -177,11 +177,11 @@ def team_names
   teams_playing
 end
 
-def player_numbers(data)
+def player_numbers(team)
   numbers = []
-  game_hash.each do [place, team]
-    if team[:team_name] == team
-      team.each do [key, data]
+  game_hash.each do [place, team_hash]
+    if team_hash[:team_name] == team
+      team_hash.each do [key, data]
         if key == :players
           data.each do |player|
             numbers.push(player[:number])
