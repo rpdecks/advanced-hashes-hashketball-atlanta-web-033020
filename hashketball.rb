@@ -172,7 +172,7 @@ def team_names
   teams_playing = []
   game_hash.each do |place, team|
     teams_playing.push(team[:team_name])
-    binding.pry
+   #binding.pry
   end
 end
 
