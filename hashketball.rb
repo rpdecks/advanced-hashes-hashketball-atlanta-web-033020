@@ -202,6 +202,7 @@ def player_stats(name)
           if player[:player_name] == name
           stats[:number] = player[:number]
           stats[:shoe] = player[:shoe]
+          stats[:points] = player[:points]
           stats[:rebounds] = player[:rebounds]
           stats[:assists] = player[:assists]
           stats[:steals] = player[:steals]
